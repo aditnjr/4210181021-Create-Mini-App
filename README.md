@@ -1,1 +1,5 @@
-# 4210181021-Create-Mini-App
+# 4210181021 -Week 1 - Create Mini App
+
+Live Preview
+
+GIF result
