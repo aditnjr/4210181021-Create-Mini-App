@@ -1,4 +1,6 @@
-# 4210181021 -Week 1 - Create Mini App
+# Week 1 - Create Mini App
+
+4210181021 / Aditya Nur Juang Rahmanda
 
 Live Preview
 
