@@ -72,8 +72,8 @@
       if (this.readyState == 4 && this.status == 200) {
         var users = JSON.parse(this.responseText);
         document.getElementById("bubble").innerHTML = "Nice to meet you,<br/>"
-                                                    + "My ID is " + users[id].id + ",<br/>"
-                                                    + "My name is " + users[id].name + ",<br/>"
+                                                    + "My ID is " + users[id].id + " and "
+                                                    + "my name is " + users[id].name + ",<br/>"
                                                     + "Contact me at " + users[id].email;
       } else {
         document.getElementById("bubble").innerHTML = "Parsing JSON...";
