@@ -12,5 +12,5 @@ Mini App ini dibuat dengan menggunakan HTML, CSS, dan Javascript.
 HTML bertanggung jawab untuk layouting. CSS untuk animasi dan styling. Sedangkan Javascript bertanggung jawab untuk parsing JSON.
 
 GIF result :
-![](result.gif)
+![](app-result.gif)
 
