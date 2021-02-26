@@ -43,6 +43,10 @@
       .center {
         text-align: center;
       }
+
+      .special {
+        text-decoration: underline;
+      }
       
       @media only screen and (max-width: 1024px) {
         .illustration {
@@ -78,9 +82,9 @@
       if (this.readyState == 4 && this.status == 200) {
         var users = JSON.parse(this.responseText);
         document.getElementById("bubble").innerHTML = "Nice to meet you,<br/>"
-                                                    + "My ID is " + users[id].id + " and "
-                                                    + "my name is " + users[id].name + ",<br/>"
-                                                    + "Contact me at " + users[id].email;
+                                                    + "My ID is <u>" + users[id].id + "</u> and "
+                                                    + "my name is <u>" + users[id].name + "</u>,<br/>"
+                                                    + "Contact me at <u>" + users[id].email + "</u>";
       } else {
         document.getElementById("bubble").innerHTML = "Parsing JSON...";
       }
