@@ -9,9 +9,7 @@ Code : [https://github.com/adityarahmanda/4210181021-Create-Mini-App/blob/main/i
 Code Description :
 
 Mini App ini dibuat dengan menggunakan HTML, CSS, dan Javascript. 
-HTML bertanggung jawab untuk layouting. 
-CSS bertanggung jawab untuk animasi dan styling.
-Javascript bertanggung jawab untuk parsing JSON.
+HTML bertanggung jawab untuk layouting. CSS untuk animasi dan styling. Sedangkan Javascript bertanggung jawab untuk parsing JSON.
 
 GIF result :
 ![](result.gif)
