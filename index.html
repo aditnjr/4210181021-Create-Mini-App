@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>4210181021 - Mini App</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+      
+      body {
+        padding: 24px 0;
+        font-size: 14px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        min-height: 100vh;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+      }
+
+      .bubble {
+        position: relative;
+        font-size: 18px;
+        margin-bottom: 12px;
+        color: #ffffff;
+        background-color: #53b8b8;
+        padding: 12px 24px;
+        border-radius: 15px;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .bubble::after {
+        position: absolute;
+        bottom: -12px;
+        left: 45%;
+        content: '';
+        width: 0; 
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid #53b8b8;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      @keyframes float {
+      0% {
+        transform: translatey(0px);
+      }
+      50% {
+        transform: translatey(-10px);
+      }
+      100% {
+        transform: translatey(0px);
+      }
+}
+    </style>
+  </head>
+<body>
+
+<div class="wrapper center">
+  <div id="bubble" class="bubble" ></div>
+  <img src="person.png" class="illustration" />
+  <div class="footer">4210181021 - Aditya Nur Juang Rahmanda</div>
+</div>
+
+<script>
+    var xmlhttp = new XMLHttpRequest();
+    var id = 20;
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var users = JSON.parse(this.responseText);
+        document.getElementById("bubble").innerHTML = "<div class=\"name\"> " + users[id].name + " </div>"
+                                                    + "<div class=\"email\"> " + users[id].email + " </div>";
+      } else {
+        document.getElementById("bubble").innerHTML = "Parsing JSON...";
+      }
+    };
+    xmlhttp.open("GET", "https://5e510330f2c0d300147c034c.mockapi.io/users", true);
+    xmlhttp.send();
+</script>
+
+</body>
+</html>
