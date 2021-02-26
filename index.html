@@ -71,8 +71,8 @@
     xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         var users = JSON.parse(this.responseText);
-        document.getElementById("bubble").innerHTML = "Nice to meet you,"
-                                                    + "My ID is " + users[id] + ",<br/>"
+        document.getElementById("bubble").innerHTML = "Nice to meet you,<br/>"
+                                                    + "My ID is " + users[id].id + ",<br/>"
                                                     + "My name is " + users[id].name + ",<br/>"
                                                     + "Contact me at " + users[id].email;
       } else {
