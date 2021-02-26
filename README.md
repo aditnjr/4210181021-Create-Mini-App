@@ -4,4 +4,5 @@ Live Preview
 aditnjr.github.io/4210181021-Create-Mini-App/
 
 GIF result
+![](Create-Mini-App.gif)
 
