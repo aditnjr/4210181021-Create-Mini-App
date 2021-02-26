@@ -82,13 +82,12 @@
 
 <script>
     var xmlhttp = new XMLHttpRequest();
-    var id = 20;
+    var id = 21;
     xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         var users = JSON.parse(this.responseText);
         document.getElementById("bubble").innerHTML = "Nice to meet you,<br/>"
-                                                    + "My ID is <u>" + users[id].id + "</u> and "
-                                                    + "my name is <u>" + users[id].name + "</u>,<br/>"
+                                                    + "My name is <u>" + users[id].name + "</u>,<br/>"
                                                     + "Contact me at <u>" + users[id].email + "</u>";
       } else {
         document.getElementById("bubble").innerHTML = "Parsing JSON...";
